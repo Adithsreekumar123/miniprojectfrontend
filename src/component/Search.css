@@ -1,0 +1,98 @@
+/* Stylish Search Container */
+.search-container {
+    background: linear-gradient(135deg, #3a8ffe 0%, #1a6cd8 100%);
+    padding: 40px 0;
+    margin-bottom: 30px;
+  }
+  
+  .search-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .search-title {
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  }
+  
+  .search-box-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .search-box {
+    display: flex;
+    align-items: center;
+    background-color: rgb(255, 255, 255); /* White background */
+    border-radius: 50px;
+    padding: 8px 20px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+  }
+  
+  .search-box:focus-within {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+  }
+  
+  .search-icon {
+    color: #3a8ffe;
+    margin-right: 15px;
+    font-size: 18px;
+  }
+  
+  /* Ensure input text is black */
+  .search-input {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 10px 0;
+    background-color: white; /* Ensure background is white */
+    color: black; /* Ensure input text is black */
+  }
+  
+  /* Ensure placeholder is visible in black */
+  .search-input::placeholder {
+    color: #666; /* Adjust placeholder color to grey */
+  }
+  
+  .search-button {
+    background: linear-gradient(135deg, #4CAF50 0%, #2E7D32 100%);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 25px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+  }
+  
+  .search-button:hover {
+    background: linear-gradient(135deg, #2E7D32 0%, #1B5E20 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Adding responsiveness */
+  @media (max-width: 576px) {
+    .search-box {
+      flex-direction: column;
+      padding: 15px;
+      border-radius: 15px;
+    }
+  
+    .search-input {
+      background-color: white; /* Ensure white background in small screens */
+      color: black; /* Ensure input text is black */
+    }
+  
+    .search-button {
+      width: 100%;
+    }
+  }
+  
